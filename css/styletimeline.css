@@ -1,0 +1,99 @@
+@-webkit-keyframes spin {
+  from {-webkit-transform:rotateY(0); }
+  to {-webkit-transform:rotateY(-360deg);}
+}
+
+.wrapper {
+margin:0px auto 0 auto;
+ 
+  -webkit-perspective:800;
+  -webkit-perspective-origin:50% 90px;
+  -webkit-transition: -webkit-perspective, 10s;
+}
+
+.shape {
+  margin:150px auto;
+  height:200px;
+  width:200px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 25s infinite linear; /*speed of rotation*/
+ }
+
+.wrapper:hover {
+-webkit-perspective-origin: 50% -100px;
+}
+
+.plane {
+  position:absolute;
+  width:200px;
+  height:200px;
+  background:rgba(0,0,0,0.7);
+  color:#ffa703;/*font inside planes*/
+ padding-top: 0;
+  text-align:center;
+}
+
+/*
+.plane p {
+  display:none;
+  color:#fff;
+  background:#333;
+  font-size:1em;
+  padding:10px;
+  
+  
+  
+}
+
+.plane:hover p {
+display:inline;
+}*/
+
+.p1 {
+  background-image: url("gameathonlogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+-webkit-transform: translateZ(250px);
+  }
+
+.p1:hover {
+
+}
+
+.p2 {
+-webkit-transform: rotateY(45deg) translateZ(250px);
+}
+
+.p3 {
+-webkit-transform: rotateY(90deg) translateZ(250px);
+ background-image: url("gameathonlogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.p4 {
+-webkit-transform: rotateY(135deg) translateZ(250px);
+}
+
+.p5 {
+-webkit-transform: rotateY(180deg) translateZ(250px);
+ background-image: url("gameathonlogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.p6 {
+-webkit-transform: rotateY(225deg) translateZ(250px);
+}
+
+.p7 {
+-webkit-transform: rotateY(270deg) translateZ(250px);
+ background-image: url("gameathonlogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.p8 {
+-webkit-transform: rotateY(315deg) translateZ(250px);
+}
