@@ -11,22 +11,31 @@
 		<!-- Header Elements -->
 		<title>Game-A-Thon 2017</title>
 		<link rel="icon" href="" size="32x32"/> <!-- Title Icon -->
-		<link rel="stylesheet" href="http://www.1001fonts.com/pirulen-font.html">
 		<!-- Links to Frameworks -->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="css/animate.css"/>
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/jquery.lettering.js"></script>
+		<script src="js/jquery.textillate.js"></script>
 		
 		<!-- Page StyleSheet -->
 		<style>
 			body{
 				background-color : #111;
-				//color:#01fb03;
-				color:  #18ffff;
+				color : #fff;
+				font-size : 1em;
+			}
+			p.catchphrase{
+				font-size : 2em;
+				align : center;
+				padding : 2px;
+			}
+			.w3-center{
 			}
 		</style>
 		<!-- Page Scripts -->
@@ -69,8 +78,15 @@
 			</div>
 			</div>
 		</nav>
+		<!-- Landing Page -->
+		<section class="" name="home" style="height:100%;">
+			<div class="w3-center">
+				<p class="catchphrase">Leave The Ordinary Behind</p>
+				<p align="center" class="riseData">Rise</p>
+			</div>
+		</section>
 		<!-- Footer -->
-		<footer>
+		<footer class="w3-display-bottommiddle">
 			<span>
 			<center>
 				<p>&copy Technology & Gaming Club, VIT University, 2017</p>
@@ -79,4 +95,15 @@
 		</footer>
 	</div>
 	</body>
+	<script>
+		$(function(){
+			$('.catchphrase').textillate({
+				in : {
+					effect : 'fadeInUpBig',
+					delay : 70,
+					shuffle : true
+				}
+			});
+		})
+	</script>
 </html>
