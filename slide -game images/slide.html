@@ -1,0 +1,47 @@
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/> -->
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+<!-- <div class="container"> -->
+  <div class="autoplay" >
+    <div><img src="img/cod1.jpg" class="img-responsive"></div>
+    <div><img src="img/csgo.jpg" class="img-responsive"></div>
+    <div><img src="img/dota.jpg" class="img-responsive"></div>
+    <div><img src="img/fifa.jpg" class="img-responsive"></div>
+    <div><img src="img/nfs.jpg" class="img-responsive"></div>
+  </div>
+<!-- </div> -->
+ 
+  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
+ <script src="https://code.jquery.com/jquery-1.11.0.min.js" ></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+        
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      // var i = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      var slidesToShowVal=3;
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {slidesToShowVal=1;}
+      //if(i===980)slidesToShowVal=1;
+      // console.log(i);
+      $('.autoplay').slick({
+        slidesToShow: slidesToShowVal,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 900,
+      });
+    });
+  </script>
+
+  </body>
+</html>
