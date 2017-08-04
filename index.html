@@ -11,11 +11,13 @@
 		<!-- Header Elements -->
 		<title>Game-A-Thon 2017</title>
 		<link rel="icon" href="" size="32x32"/> <!-- Title Icon -->
+		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight" rel="stylesheet">
 		<!-- Links to Frameworks -->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="css/animate.css"/>
+		<link rel="stylesheet" href="css/styletimeline.css"/>
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!-- Latest compiled JavaScript -->
@@ -30,12 +32,41 @@
 				color : #fff;
 				font-size : 1em;
 			}
+			.navbar{
+				margin-bottom : 0;
+			}
 			p.catchphrase{
 				font-size : 2em;
 				align : center;
 				padding : 2px;
 			}
-			.w3-center{
+			.caption{
+				position : absolute;
+				left : 0;
+				top : 50%;
+				width : 100%;
+				text-align : center;
+				color : #000;
+			}
+			.caption span.border{
+				color : #fff;
+				padding : 18px;
+				font-size : 15px;
+				font-family: 'Zilla Slab Highlight', cursive;
+				letter-spacing : 3px;
+				
+				-webkit-text-stroke: 1px black;
+				-webkit-text-stroke-color : black;
+				text-shadow:
+					3px 3px 0 #000,
+					-1px -1px 0 #000,
+					1px -1px 0 #000,
+					-1px 1px 0 #000,
+					1px 1px 0 #000,
+					
+			}
+			h2.sectionhead{
+				text-align : center;
 			}
 		</style>
 		<!-- Page Scripts -->
@@ -79,14 +110,37 @@
 			</div>
 		</nav>
 		<!-- Landing Page -->
-		<section class="" name="home" style="height:100%;">
-			<div class="w3-center">
-				<p class="catchphrase">Leave The Ordinary Behind</p>
-				<p align="center" class="riseData">Rise</p>
+		<div class="home">
+			<div class="w3-display-container">
+				<img src="images/gt.jpg" class="w3-image">
+				<div class="caption">
+					<span class="border"><p class="catchphrase">GO BEYOND THE ORDINARY</p></span>
+				</div>
 			</div>
+		</div>
+		<!-- Timeline -->
+		<section name="timeline">
+		<h2 class="sectionhead">GAT TimeLine</h2>
+		<div class="wrapper">
+			<div class="shape">
+			
+				<div class="plane p1"></div>
+				<div class="plane p2"><h2>2013</h2><p>We began our journey with a prize pool of 80k in graVITas and 50k in riviera. We had total 400 participants in graVITas and 250 in Riviera.</p></div>
+				<div class="plane p3">TAG</div>
+				<div class="plane p4"><h2>2014</h2><p>Our second session of events saw 760 participants in graVITas and 420 in Riviera with a prize pool of 1.8 lakhs and 1.2 lakhs respectively.</p></div>
+				<div class="plane p5">TAG</div>
+				<div class="plane p6"><h2>2015</h2>We had 800 participants Riviera 2015 with a prize pool of 2 Lakhs. We raised the bars in graVITas 2015 by giving giveaways so no one went home unhappy with a prize pool of 2 lakhs.</div>
+				<div class="plane p7">TAG</div>
+				<div class="plane p8"><h2>2016</h2><p>It was only for the students of VIT and we had exclusive things.Over 500 participants and a prize pool of 1.2 Lakhs.</p></div>
+			
+			</div>
+		</div>
+		</section>
+		<!-- Games -->
+		<section name="games">
 		</section>
 		<!-- Footer -->
-		<footer class="w3-display-bottommiddle">
+		<footer>
 			<span>
 			<center>
 				<p>&copy Technology & Gaming Club, VIT University, 2017</p>
