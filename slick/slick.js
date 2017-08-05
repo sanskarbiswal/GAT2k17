@@ -40,9 +40,9 @@
             _.defaults = {
                 accessibility: true,
                 adaptiveHeight: false,
-                appendArrows: $(element),
-                appendDots: $(element),
-                arrows: true,
+                // appendArrows: $(element),
+                // appendDots: $(element),
+                arrows: false,
                 asNavFor: null,
                 prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
                 nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
