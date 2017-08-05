@@ -24,6 +24,9 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="js/jquery.lettering.js"></script>
 		<script src="js/jquery.textillate.js"></script>
+		<!-- for game slideshow -->
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	  	<script type="text/javascript" src="slick/slick.min.js"></script>
 		
 		<!-- Page StyleSheet -->
 		<style>
@@ -70,6 +73,10 @@
 			}
 		</style>
 		<!-- Page Scripts -->
+		<!-- for game slideshow -->
+		 <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  		 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  
 	</head>
 	<body>
 	<!-- Preloader -->
@@ -136,8 +143,15 @@
 			</div>
 		</div>
 		</section>
-		<!-- Games -->
+		<!--for Games slideshow -->
 		<section name="games">
+		<div class="autoplay" >
+		    <div><img src="images/cod1.jpg" class="img-responsive"></div>
+		    <div><img src="images/csgo.jpg" class="img-responsive"></div>
+		    <div><img src="images/dota.jpg" class="img-responsive"></div>
+		    <div><img src="images/fifa.jpg" class="img-responsive"></div>
+		    <div><img src="images/nfs.jpg" class="img-responsive"></div>
+		  </div>
 		</section>
 		<!-- Footer -->
 		<footer>
@@ -148,6 +162,7 @@
 			</span>
 		</footer>
 	</div>
+	
 	</body>
 	<script>
 		$(function(){
@@ -158,6 +173,20 @@
 					shuffle : true
 				}
 			});
-		})
+		});
+		
+	</script>
+	<script type="text/javascript">
+		 $(document).ready(function(){
+     
+      var slidesToShowVal=3;
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {slidesToShowVal=1;}
+     $('.autoplay').slick({
+        slidesToShow: slidesToShowVal,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 900,
+      });
+    });
 	</script>
 </html>
