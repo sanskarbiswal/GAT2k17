@@ -95,9 +95,14 @@
 			header{
 				font-size : 2em;
 			}
-			@media only screen and (min-width : 450px){
+			@media only screen and (min-width : 412px){
 				input.w3-input{
 					width : 40vw;
+				}
+			}
+			@media only screen and (max-width : 412px)}{
+				img.w3-image{
+					height : 50vh;
 				}
 			}
 		</style>
@@ -110,7 +115,7 @@
 	<body>
 	<!-- Preloader -->
 	<div class="preload"></div>
-	<div class="content" style="//display:none;">
+	<div class="content" style="//display:none; margin-bottom : 0;">
 		<!-- Navbar -->
 		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
@@ -148,7 +153,7 @@
 		<!-- Landing Page -->
 		<div class="home">
 			<div class="w3-display-container">
-				<img src="images/gt.jpg" class="w3-image">
+				<img src="images/gt.jpg" class="w3-image" style="width:100%;">
 				<div class="caption2">
 					<span class="border"><p class="theme">#RISE</p></span>
 				</div>
@@ -178,19 +183,20 @@
 		</section>
 		<!--for Games slideshow -->
 		<section name="games">
-		<div class="autoplay" >
-		    <div><img src="images/cod1.jpg" class="img-responsive"></div>
-		    <div><img src="images/csgo.jpg" class="img-responsive"></div>
-		    <div><img src="images/dota.jpg" class="img-responsive"></div>
-		    <div><img src="images/fifa.jpg" class="img-responsive"></div>
-		    <div><img src="images/images/blur.jpg" class="img-responsive"></div>
-		  </div>
+			<header class="w3-black w3-center w3-padding-16 w3-margin-bottom">WARZONE</header>
+			<div class="autoplay" >
+				<div><img src="images/cod1.jpg" class="img-responsive" style="min-height: 50vh;"></div>
+				<div><img src="images/csgo.jpg" class="img-responsive" style="min-height: 50vh;"></div>
+				<div><img src="images/dota.jpg" class="img-responsive" style="min-height: 50vh;"></div>
+				<div><img src="images/fifa.jpg" class="img-responsive" style="min-height: 50vh;"></div>
+				<div><img src="images/images/blur.jpg" class="img-responsive" style="min-height: 50vh;"></div>
+			  </div>
 		</section>
 		<br/>
 		<!-- Footer -->
 		<section name="footer" class="w3-display-container">
 			<div class="w3-card-4">
-				<header style="text-align : center;" class="w3-black w3-padding w3-margin-bottom"><span class="glyphicon glyphicon-pencil"></span> Contact Us</header>
+				<header style="text-align : center;" class="w3-black w3-padding w3-margin-bottom"><span class="glyphicon glyphicon-pencil"></span> Contact Us</header></header>
 				<div>
 					<form class="w3-container">
 						<label>Your Name</label>
@@ -206,11 +212,14 @@
 						<input type="textbox" class="w3-input w3-round"/>
 					</form>
 				</div>
-				<footer style="text-align : center;">
+				<br/>
+				<footer style="text-align : center;" class="w3-black"> 
 					<p>
-						
+						<span><a href="#" target="_blank"><img src="images/fb.png" style="width=20px;height:30px"/></a></span> 
+						<span><a href="#" target="_blank"><img src="images/twitter.png" style="width=20px;height:28px; padding-left:5px;"/></a></span>
+						<span><a href="#" target="_blank"><img src="images/linkedin.png" style="width=20px;height:35px; padding-left:5px;"/></a></span><br/>
+						Technology And Gaming Club, VIT
 					</p>
-					<p>Technology And Gaming Club, VIT</p>
 				</footer>
 			</div>
 		</section>
@@ -240,7 +249,7 @@
 	<script type="text/javascript">
 		 $(document).ready(function(){
      
-      var slidesToShowVal=3;
+      var slidesToShowVal=2;
       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {slidesToShowVal=1;}
      $('.autoplay').slick({
         slidesToShow: slidesToShowVal,
