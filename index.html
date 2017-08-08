@@ -5,7 +5,7 @@
 		<!-- Meta Data -->
 		<meta charset="UTF-8"/>
 		<meta name="author" content="TAG Club"/>
-		<meta name="keywords" content="Gameathon, VIT, TAG, Games, Competition, gravitas"/>
+		<meta name="keywords" content="Gameathon, VIT, TAG, Games, Competition, gravitas, blur, fifa, csgo, gaming, cod, dota, fest, september"/>
 		<meta name="description" content="Official Website for Gameathon 2017"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<!-- Header Elements -->
@@ -45,7 +45,6 @@
 				align : center;
 				padding : 2px;
 			}
-			
 			.caption1, .caption2{
 				position : absolute;
 				left : 0;
@@ -95,14 +94,14 @@
 			header{
 				font-size : 2em;
 			}
-			@media only screen and (min-width : 412px){
-				input.w3-input{
-					width : 40vw;
+			@media only screen and (max-width : 420px){
+				img.w3-image{
+					height : 92vh;
 				}
 			}
-			@media only screen and (max-width : 412px)}{
-				img.w3-image{
-					height : 50vh;
+			@media only screen and (max-width : 420px)}{
+				input.w3-input{
+					width : 40vw;
 				}
 			}
 		</style>
@@ -209,7 +208,9 @@
 						<input type="text" class="w3-input w3-round"/>
 						<br>
 						<label>Type in Your Query</label>
-						<input type="textbox" class="w3-input w3-round"/>
+						<input type="textbox" class="w3-input w3-round" style="height: 20vh;"/>
+						<br>
+						<input type="submit" class="w3-input w3-button w3-round w3-border" value="Send Message"/>
 					</form>
 				</div>
 				<br/>
