@@ -6,6 +6,7 @@ html,body{
 }
 body.body{
 	background-color: #0e0e1a;
+	font-family: 'Bellefair', serif;
 }
 .w3-sidebar{
 	display: none;
@@ -115,9 +116,6 @@ h2.games-head{
   	font-size: 4em;
   	color: #ffc107;
 }
-h4.tHead{
-	font-family: 'Bellefair', serif;
-}
 /* ------ Media Queries ----- */
 @media only screen and (max-width: 420px){
 	p.theme{
@@ -154,8 +152,6 @@ h4.tHead{
 	font-family: 'Raleway', sans-serif;
 }
 .pad{
-	
-	
 	padding-top: 1%;
 }
 span.foot{

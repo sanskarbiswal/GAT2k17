@@ -45,8 +45,8 @@ window.onload = function(){
     if (x<568) {
         document.getElementById("landImg").src="img/2.jpg";
         document.getElementById("landImg").style.display = "block";
-        document.getElementById("prime").className = "";
         document.getElementById("body").style.background = "#080b0f";
+        document.getElementById("games-head").style.background = "#080b0f";
     }
     else {
         document.getElementById("landImg").src="img/1.jpg";
