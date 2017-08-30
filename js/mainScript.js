@@ -47,6 +47,8 @@ window.onload = function(){
         document.getElementById("landImg").style.display = "block";
         document.getElementById("body").style.background = "#080b0f";
         document.getElementById("games-head").style.background = "#080b0f";
+        document.getElemenysByClassName("theme").innerHTML = "#RISE";
+        document.getElemenysByClassName("eventDate").innerHTML = "22-24 Sept";
     }
     else {
         document.getElementById("landImg").src="img/1.jpg";
@@ -62,8 +64,9 @@ $(document).ready(function(e){
   });
 });
 //jQuery
-$(function(){
+$(document).ready(function(){
   $('p.theme').textillate({
+    initialDelay : 1200,
     in : {
       //effect : 'rotateInUpRight',
       effect : 'fadeInUpBig',
@@ -73,8 +76,9 @@ $(function(){
   });
 });
 //jQuery
-$(function(){
+$(document).ready(function(){
   $('p.eventDate').textillate({
+    initialDelay : 1200,
     in : {
       //effect : 'rotateInUpRight',
       effect : 'fadeInUpBig',
@@ -94,3 +98,6 @@ $(document).ready(function(){
     maxHeight : 900
   });
 });
+jQuery(window).load(function(){
+        jQuery(".hameid-loader-overlay").fadeOut(500);
+    });
