@@ -43,7 +43,7 @@ button.snavBt, a.snavBt{
 }
 img.logoBtn{
 	height: 40px;
-	margin-top: 10px
+	margin-top: 0;
 }
 @media screen only and(max-height: 600px){
 	img.logoBtn{
@@ -207,13 +207,13 @@ button.blink_me {
 /*---- Genral classes end -------*/
 /*Change icons size here*/
 .social-icons .fa {
-    font-size: 2.0em;
+    font-size: 1.5em;
 }
 /*Change icons circle size and color here*/
 .social-icons .fa {
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
     text-align: center;
     color: #FFF;
     color: rgba(255, 255, 255, 0.8);
