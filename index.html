@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
 		<meta name="author" content="TAG Club, VIT">
 		<meta name="description" content="Official Webpage For Game-A-Thon 2017">
-		<meta name="keyword" content="games, VIT, gravitas, 2017, gaming, competition, blur, csgo, fifa, dota, cod, prizes">
+		<meta name="keyword" content="games, VIT, gravitas, 2017, gaming, competition, blur, csgo, fifa, dota, cod, prizes, msi, playtonia, fostering Linux, trip off beat, gameathon">
 		<!-- CSS Files -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
     	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -155,24 +155,30 @@
 			<!-- Sponsor Section -->
 			<section class="w3-padding" name="sponsor">
 	        	<h2 class="w3-center w3-padding-16 games-head" id="games-head">Our Sponsors</h2>
-				<div class="w3-row">
-					<div class="w3-col m3 l3 w3-card-8">
-						<header class="randomBar w3-padding w3-bar">-</header>
-						<img class="w3-image w3-padding w3-margin-5" src="img/fosteringLinux.png">
-					</div>
-					<div class="w3-col m3 l3 w3-card-8">
-						<header class="randomBar w3-padding w3-bar">-</header>
-						<img class="w3-image  w3-padding w3-margin-5" src="img/msilogo.png">
-					</div>
-					<div class="w3-col m3 l3 w3-card-8">
-						<header class="randomBar w3-padding w3-bar">-</header>
-						<img class="w3-image w3-padding w3-margin-top" src="img/playtonia.png">
-					</div>
-					<div class="w3-col m3 l3 w3-card-8">
-						<header class="randomBar w3-padding w3-bar">-</header>
-						<img class="w3-image w3-padding w3-margin-5" src="img/Tripoffbeat.png">
-					</div>
+				<div class="w3-content" style="max-width:40vw">
+					<a name="sponsorSection"></a>
+					<img class="mySlides" src="img/msilogo.png" style="width:100%">
+					<img class="mySlides" src="img/playtonia.png" style="width:100%">
+					<img class="mySlides" src="img/fosteringLinux.png" style="width:100%">
+					<img class="mySlides" src="img/Tripoffbeat.png" style="width:100%">
 				</div>
+				
+				<script>
+				var myIndex = 0;
+				carousel();
+				
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					}
+					myIndex++;
+					if (myIndex > x.length) {myIndex = 1}    
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 2000); // Change image every 2 seconds
+				}
+				</script>
 			</section>
 	        <!-- Footer Section-->
 	        <footer class="footmain">
@@ -181,7 +187,7 @@
 			    	<div class="row">
 			        	<div class="col-sm-4 grid w3-padding-16">
 			            	<h4>REACH US</h4>
-			            	<i class="fa fa-map-marker fa-2x" aria-hidden="true" ></i> &nbsp;&nbsp;Technology and Gaming Club,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vit University,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vellore TN-632014
+			            	<i class="fa fa-map-marker fa-2x" aria-hidden="true" ></i> &nbsp;&nbsp;Technology and Gaming Club,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VIT University,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vellore TN-632014
 			            </div>
 			        	<div class="col-sm-4 grid w3-padding-16">
 			            	<h4>CONTACT</h4>
